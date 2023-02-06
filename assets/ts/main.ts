@@ -10,12 +10,22 @@ const images: ImageItem[] = [
   new ImageItem(
     "./assets/img/image.jpg",
     "Ugly Dog Face A",
-    "Photo of a ... Dog"
+    "Photo of sort of a dog ... "
   ),
   new ImageItem(
     "./assets/img/image1.jpg",
     "Ugly Dog Face B",
-    "Photo of ... another Dog"
+    "Photo of sort of another Dog ... "
+  ),
+  new ImageItem(
+    "./assets/img/image2.jpeg",
+    "Ugly Dog Face C",
+    "Photo of sort of another Dog again ... "
+  ),
+  new ImageItem(
+    "./assets/img/image3.webp",
+    "Ugly Dog Face C",
+    "Photo of sort of another Dog again ... "
   ),
 ];
 

@@ -5,8 +5,10 @@ const imagesSelectorEl = document.querySelector("#picturesSelector");
 const btn1 = document.querySelector("#prevButton");
 const btn2 = document.querySelector("#nextButton");
 const images = [
-    new ImageItem("./assets/img/image.jpg", "Ugly Dog Face A", "Photo of a ... Dog"),
-    new ImageItem("./assets/img/image1.jpg", "Ugly Dog Face B", "Photo of ... another Dog"),
+    new ImageItem("./assets/img/image.jpg", "Ugly Dog Face A", "Photo of sort of a dog ... "),
+    new ImageItem("./assets/img/image1.jpg", "Ugly Dog Face B", "Photo of sort of another Dog ... "),
+    new ImageItem("./assets/img/image2.jpeg", "Ugly Dog Face C", "Photo of sort of another Dog again ... "),
+    new ImageItem("./assets/img/image3.webp", "Ugly Dog Face C", "Photo of sort of another Dog again ... "),
 ];
 let selectedPicture = images[0];
 const renderSelector = () => {
