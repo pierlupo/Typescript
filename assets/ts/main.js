@@ -1,12 +1,10 @@
-import ImageItem from "./classes/ImageItem.js";
+import ImageItem from "./classes/imageItem";
 const imageEl = document.querySelector("#movingPicture");
 const imageCaptionEl = document.querySelector("#imageCaption");
 const imagesSelectorEl = document.querySelector("#picturesSelector");
-const btn1 = document.querySelector("#prevButton");
-const btn2 = document.querySelector("#nextButton");
 const images = [
-    new ImageItem("./assets/img/image.jpg", "Ugly Dog Face A", "Photo of a ... Dog"),
-    new ImageItem("./assets/img/image1.jpg", "Ugly Dog Face B", "Photo of ... another Dog"),
+    new ImageItem("./assets/img/image.jpg", "Dog Face A", "Photo of a Cute Dog"),
+    new ImageItem("./assets/img/image1.jpg", "Dog Face B", "Photo of a Another Dog"),
 ];
 let selectedPicture = images[0];
 const renderSelector = () => {
@@ -25,7 +23,7 @@ const renderSelector = () => {
     imageEl.alt = selectedPicture.imageAlt;
     imageCaptionEl.textContent = selectedPicture.imageCaption;
 };
-btn1.addEventListener('click', () => {
+document.querySelector("#prevButton").addEventListener('click', () => {
     if (selectedPicture === images[0]) {
         selectedPicture = images[images.length - 1];
     }
@@ -34,7 +32,7 @@ btn1.addEventListener('click', () => {
     }
     renderSelector();
 });
-btn2.addEventListener('click', () => {
+document.querySelector("#nextButton").addEventListener('click', () => {
     if (selectedPicture === images[images.length - 1]) {
         selectedPicture = images[0];
     }

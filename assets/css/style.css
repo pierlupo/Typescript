@@ -56,7 +56,7 @@ body{
     font-family: roboto;
 }
 
-img#avatar {
+img {
     height: 400px;
     width: 400px;
     object-fit: cover;
@@ -69,7 +69,7 @@ img#avatar {
     font-size: 1rem;
 }
 
-#buttons{
+.buttons{
     display: flex;
     justify-content: center;
     align-content: center;
